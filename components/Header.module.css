@@ -1,0 +1,18 @@
+.header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    background-color: #6e3c89;
+    font-family: "Neuropol", "sans-serif";
+    font-size: 20px;
+    z-index: 1;
+}
+.navigation ul {
+    display: flex;
+    gap: 50px;
+}
