@@ -8,7 +8,7 @@ export default function Header() {
                 <Image 
                     src="/images/kalachakra_icon.svg"
                     alt="Kalachakra Icon"
-                    height={44}
+                    height={40}
                     width={70}
                 />
             </a>
