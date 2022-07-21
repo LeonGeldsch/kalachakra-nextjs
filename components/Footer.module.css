@@ -1,0 +1,42 @@
+.footer {
+    margin-top: 200px;
+    background-color: var(--blue3);
+}
+.footerContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 0;
+}
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--purple1);
+    padding: 100px 50px;
+}
+.footerNavigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerNavigation li {
+    width: fit-content;
+}
+.footerNavigationItem {
+    font-family: "Neuropol", "sans-serif";
+    font-size: 20px;
+}
+.footerSocialIcon path {
+    transition: fill .2s ease-in-out;
+}
+.footerSocialIcon:hover path {
+    fill: var(--white);
+}

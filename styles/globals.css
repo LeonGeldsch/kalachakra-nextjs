@@ -92,3 +92,116 @@ h5 {
 ul {
   list-style: none;
 }
+
+svg {
+  max-width: 100%;
+}
+
+
+/* ========================= ELEMENT: INPUTS ============================= */
+
+.underlined-input, .outlined-input {
+  position: relative;
+  width: fit-content;
+  filter: drop-shadow(3px 5px 2px var(--black));
+}
+
+.underlined-input input, .outlined-input input {
+  color: var(--white);
+  height: 4rem;
+  border: none;
+  border-bottom: 1px solid var(--blue1);
+  background-color: transparent;
+  padding-left: 20px;
+  font-size: 20px;
+  transition: all .2s var(--input-ease);
+  outline: none;
+  box-sizing: border-box;
+  border-style: none;
+}
+.underlined-input input::placeholder, .outlined-input input::placeholder {
+  color: transparent;
+}
+
+.underlined-input label, .outlined-input label {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: var(--blue1);
+  text-align: center;
+  transition: .2s var(--input-ease);
+  font-size: 20px;
+  pointer-events: none;
+  padding: 0 5px;
+}
+
+.underlined-input input:not(:placeholder-shown) ~ label,
+.underlined-input input:focus ~ label,
+.outlined-input input:not(:placeholder-shown) ~ label,
+.outlined-input input:focus ~ label {
+  top: -10px;
+  left: 0;
+  font-size: 1rem;
+}
+
+.underlined-input .underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s var(--input-ease);
+  border-bottom: 2px solid var(--pink);
+}
+
+.underlined-input input:focus ~ .underline {
+  transform: scaleX(1);
+}
+.underlined-input::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: all .1s var(--input-ease);
+  border-bottom: 2px solid transparent;
+}
+.underlined-input:hover::before {
+  border-bottom: 2px solid var(--white);
+}
+.underlined-input input:focus ~ label,
+.outlined-input input:focus ~ label {
+  color: var(--pink);
+}
+
+.outlined-input input {
+  border: 1px solid var(--blue1);
+  border-radius: 10px;
+  font-family: "OCRA Std", "sans-serif";
+}
+.outlined-input input:hover {
+  border-color: var(--white);
+}
+.outlined-input input:focus {
+  border: 1px solid var(--pink);
+}
+
+
+/* ========================= ELEMENT: BUTTONS ============================= */
+
+.button {
+  background-color: var(--blue1);
+  color: var(--white);
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: "OCRA Std", "sans-serif";
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2s var(--input-ease);
+  box-shadow: 5px 5px 5px #28282887;
+}
+.button:hover {
+  background-color: var(--white);
+  color: var(--blue1);
+}
