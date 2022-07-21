@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './Parallax.module.css';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export default function Parallax() {
 
@@ -10,35 +10,41 @@ export default function Parallax() {
 
     const parallaxLayersRef = useRef([]);
 
+    const parallaxWrapperRef = useRef(null);
+
     const images = ["parallax_1.png", "parallax_2.png", "parallax_3.png", "parallax_4.png", "parallax_5.png", "parallax_6.png", "parallax_7.png", "parallax_8.png"];
 
     useEffect(() => {
 
-        console.log(parallaxLayersRef.current);
+        let parallaxAnimations = [];
 
         parallaxLayersRef.current.forEach((layer, index) => {
-            gsap.to(layer, {
-                y: "100%",
+            parallaxAnimations[parallaxAnimations.length] = gsap.to((layer), {
+                y: `${100 / (index + 1)}%`,
+                ease: "none",
                 scrollTrigger: {
+                    trigger: parallaxWrapperRef.current,
+                    start: "top top",
+                    marker: true,
                     scrub: true
                 }
             });
         });
-    
+
     }, []);
 
     const parallaxImages = images.map((image, index) => 
-        <div className={styles.parallax_layer} id={`parallax_layer_${index}`} ref={el => parallaxLayersRef.current[index] = el} key={index}>
+        <div className={styles.parallax_layer} id={`parallax_layer_${index + 1}`} ref={el => parallaxLayersRef.current[index] = el} key={index}>
             <Image
                 src={`/images/parallax/${image}`}
-                alt={`Parallax image ${index}`}
+                alt={`Parallax image ${index + 1}`}
                 layout="fill"
             />
         </div>
     );
 
     return (
-        <div className={styles.parallax_container} id="home">
+        <div className={styles.parallax_container} id="home" ref={parallaxWrapperRef}>
             {parallaxImages}
         </div>
     );
