@@ -1,5 +1,6 @@
 .devBlog {
     max-width: 1000px;
+    padding-top: 100px;
     margin: 0 auto;
     gap: 100px;
 }
