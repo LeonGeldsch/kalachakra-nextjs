@@ -25,12 +25,10 @@ export default function Parallax() {
                 scrollTrigger: {
                     trigger: parallaxWrapperRef.current,
                     start: "top top",
-                    marker: true,
                     scrub: true
                 }
             });
         });
-
     }, []);
 
     const parallaxImages = images.map((image, index) => 
