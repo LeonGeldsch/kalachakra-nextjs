@@ -20,7 +20,7 @@ export default function Parallax() {
 
         parallaxLayersRef.current.forEach((layer, index) => {
             parallaxAnimations[parallaxAnimations.length] = gsap.to((layer), {
-                y: `${100 / (index + 1)}%`,
+                y: `${100 - (index + 2) * 10}%`,
                 ease: "none",
                 scrollTrigger: {
                     trigger: parallaxWrapperRef.current,
