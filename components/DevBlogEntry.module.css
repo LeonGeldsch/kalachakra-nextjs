@@ -1,5 +1,5 @@
 .devBlog {
-    max-width: 1200px;
+    max-width: 1000px;
     padding-top: 100px;
     margin: 0 auto;
     gap: 100px;
@@ -22,6 +22,7 @@
     width: 100%;
     display: flex;
     gap: 40px;
+    cursor: pointer;
 }
 .blogPost:nth-of-type(2n) {
     flex-direction: row-reverse;
@@ -35,4 +36,26 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.readMore {
+    color: #6481AB;
+    white-space: nowrap;
+}
+
+.tag {
+    margin: 0 20px;
+    padding: 10px 5px 5px 10px;
+    border-radius: 10px;
+}
+.tag:global(.web) {
+    background-color: #3488C1;
+}
+.tag:global(.audio) {
+    background-color: #efff13;
+    color: black;
+}
+.tag:global(.programming) {
+    background-color: #efff13;
+    color: black;
 }

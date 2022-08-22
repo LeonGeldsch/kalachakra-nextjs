@@ -71,7 +71,13 @@ section {
 h1, h2, h3, h4 {
   font-family: "Neuropol", "sans-serif";
 }
-
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 56px;
+}
 h2 {
   font-size: 48px;
   color: var(--pink);
@@ -95,6 +101,11 @@ ul {
 
 svg {
   max-width: 100%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 
@@ -204,4 +215,10 @@ svg {
 .button:hover {
   background-color: var(--white);
   color: var(--blue1);
+}
+
+/* ========================= ELEMENT: MODAL ============================= */
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
 }
