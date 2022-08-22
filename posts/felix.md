@@ -1,6 +1,6 @@
 ---
 title: 'Original Soundtrack'
-description: 'Creating the soundtrack of Kalachakra'
+description: 'Felix Koköfer'
 preview: 'Hello! My name is Felix Koköfer and I am responsible for a big part of the music you hear in the game. For production, I tried to implement as much of my influences from underground electronic music. Therefor I used a variety of synthesizer and some unique...'
 imageSrc: '/images/posts/felix1.png'
 imageWidth: 800

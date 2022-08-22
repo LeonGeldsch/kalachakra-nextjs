@@ -40,3 +40,18 @@
 .footerSocialIcon:hover path {
     fill: var(--white);
 }
+
+
+@media screen and (max-width: 800px) {
+    .footerContainer {
+        flex-direction: column;
+        gap: 0;
+    }
+    .footerLeft {
+        padding: 50px 20px;
+    }
+    .footerRight {
+        flex-direction: row;
+        padding: 30px 20px;
+    }
+}

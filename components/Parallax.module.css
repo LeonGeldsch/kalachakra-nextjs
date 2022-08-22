@@ -1,19 +1,13 @@
 .parallax_container {
-    height: 110vh;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
-    perspective: 0;
+    aspect-ratio: 1321/793;
+    width: 100%;
+    position: relative;
+    top: 80px;
 }
 .parallax_layer {
-    flex-grow: 1;
     position: absolute;
     inset: 0;
-    top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .parallax_layer img {
     object-fit: cover;

@@ -16,3 +16,9 @@
     display: flex;
     gap: 50px;
 }
+
+@media screen and (max-width: 800px) {
+    .navigation {
+        display: none;
+    }
+}

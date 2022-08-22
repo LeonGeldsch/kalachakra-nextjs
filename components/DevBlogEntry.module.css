@@ -45,7 +45,7 @@
 
 .tag {
     margin: 0 20px;
-    padding: 10px 5px 5px 10px;
+    padding: 10px 10px 5px 10px;
     border-radius: 10px;
 }
 .tag:global(.web) {
@@ -56,6 +56,14 @@
     color: black;
 }
 .tag:global(.programming) {
-    background-color: #efff13;
-    color: black;
+    background-color: #095a0f;
+}
+.tag:global(.art) {
+    background-color: #b92a42;
+}
+
+@media screen and (max-width: 800px) {
+    .blogPost {
+        flex-direction: column !important;
+    }
 }
