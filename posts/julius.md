@@ -1,6 +1,6 @@
 ---
 title: 'Dialog System'
-description: 'Julius'
+description: 'Julius Hense'
 preview: 'Hi! I’m Julius and I programmed the User Interface and the Dialog-System.  
 When positioning everything, I tried to capture the feeling of a Visual Novel.  
 Got some inspiration from RPG-Maker and games with similar structure. The code itself it optimized well and could be reused easily.  
@@ -18,6 +18,6 @@ When positioning everything, I tried to capture the feeling of a Visual Novel.
 Got some inspiration from RPG-Maker and games with similar structure. The code itself it optimized well and could be reused easily.  
 Even though my tasks are not the biggest eyecatcher, I still hope you can enjoy the atmosphere it creates.
 
-![in-game Screenshot](/images/posts/julius1.png "in-game Screenshot")
+![in-game screenshot](/images/posts/julius1.png "in-game screenshot")
 
-![in-game Screenshot](/images/posts/julius2.png "in-game Screenshot")
+![in-game screenshot](/images/posts/julius2.png "in-game screenshot")
